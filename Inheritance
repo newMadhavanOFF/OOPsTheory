@@ -26,7 +26,8 @@ The syntax of Java Inheritance:
          System.out.println("Programmer salary is:"+p.salary);  
          System.out.println("Bonus of Programmer is:"+p.bonus);  
       }  
-     }  
+     } 
+---------------------------------------------------------------------------------------------------------------------------------------------------------       
      
 -> Types Of Inheritance :
      1.Single
@@ -51,7 +52,7 @@ The syntax of Java Inheritance:
          d.eat();  
       } 
     }  
-    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------    
 2.MULTILEVEL INHERITANCE:
      * When there is a chain of inheritance, it is known as multilevel inheritance. 
 -> Example
