@@ -9,7 +9,7 @@ ENCAPSULATION:
  1. A class can have full control on data members
  2. A class can make its data members either read only or read/write by providing setter(or) getter.
  3. A class can change its internal implementation without effecting users program
- 
+---------------------------------------------------------------------------------------------------------------------------------------------------------- 
  Example:
    class Student{
      private int rollno;
