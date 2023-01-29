@@ -11,9 +11,10 @@ Compile-time Polymorphism:
  
 Runtime Polymorphism:
   -> The call to the Overridden methods resolved at runtime by javaInterpter(jvm) based on the instance type.
-  
+-------------------------------------------------------------------------------------------------------------------------------------------------  
 Example:
    1.Compile-time:
+   
    class A{
      public void show(){
       System.out.println("hello");
@@ -29,9 +30,10 @@ Example:
       }
    }
   
-   
+---------------------------------------------------------------------------------------------------------------------------------------------------------  
        
    2.Runtime:
+   
     class Bike{  
       void run(){
       System.out.println("running");
@@ -46,3 +48,4 @@ Example:
       b.run();// running safely with 60km
      }  
    }  
+----------------------------------------------------------------------------------------------------------------------------------------------------
