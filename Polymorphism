@@ -11,6 +11,10 @@ Compile-time Polymorphism:
  
 Runtime Polymorphism:
   -> The call to the Overridden methods resolved at runtime by javaInterpter(jvm) based on the instance type.
+  
+-> Advantages/need of Polymorphism:
+   1. Programmers code can be reused via Polymorphism
+   2. Supports a single variable name for multiple data types
 -------------------------------------------------------------------------------------------------------------------------------------------------  
 Example:
    1.Compile-time:
