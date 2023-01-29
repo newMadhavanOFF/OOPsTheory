@@ -1,0 +1,48 @@
+POLYMORPHISM:
+  -> Polymorphism in Java is a concept by which we can perform a single action in different ways. 
+  -> POLY means Many, MORPHISM means Forms.
+  
+There are two types of polymorphism in Java: 
+  1.compile-time polymorphism 
+  2.runtime polymorphism.
+
+Compile-time Polymorphism:
+  -> The call to the overloaded methods resolved at compile time by java Compiler(javac) based on the type of arguments.
+ 
+Runtime Polymorphism:
+  -> The call to the Overridden methods resolved at runtime by javaInterpter(jvm) based on the instance type.
+  
+Example:
+   1.Compile-time:
+   class A{
+     public void show(){
+      System.out.println("hello");
+      }
+     public void show(int i){
+       System.out.println("hi hello");
+     }
+   }
+  class CPoly{
+    public static void main(String[] args){
+      A obj=new A();
+      obj.show();//hi hello
+      }
+   }
+  
+   
+       
+   2.Runtime:
+    class Bike{  
+      void run(){
+      System.out.println("running");
+      }  
+     }    
+    class Splendor extends Bike{  
+      void run(){
+      System.out.println("running safely with 60km");
+      }  
+      public static void main(String args[]){  
+      Bike b = new Splendor();//upcasting  
+      b.run();// running safely with 60km
+     }  
+   }  
