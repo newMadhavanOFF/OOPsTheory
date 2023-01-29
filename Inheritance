@@ -1,0 +1,74 @@
+1.INHERITANCE:
+
+   -> Inheritance is the process of acquiring the properties and behaviors  from one class to another class.
+   -> The class from which properties are acquired is known as Super class or Base class.
+   -> The class to which properties are acquired is known as Sub class or Derived class.
+   -> Always SubClass extends SuperClass.
+   
+Why use inheritance in java?
+   * For Method Overriding (so runtime polymorphism can be achieved).
+   * For Code Reusability.
+ 
+The syntax of Java Inheritance:
+   -> class Subclass-name extends Superclass-name  
+      {  
+         //methods and fields  
+      }  
+
+-> Example:
+    class Employee{  
+         float salary=40000;  
+       }  
+    class Programmer extends Employee{  
+         int bonus=10000;  
+     public static void main(String args[]){  
+         Programmer p=new Programmer();  
+         System.out.println("Programmer salary is:"+p.salary);  
+         System.out.println("Bonus of Programmer is:"+p.bonus);  
+      }  
+     }  
+     
+-> Types Of Inheritance :
+     1.Single
+     2.Multilevel
+     3.Multiple
+     4.Hierarchical
+     5.Hybrid
+     
+1.SINGLE INHERITANCE:
+    * When a class inherits properties and behaviour of only one class.
+-> Example
+    class Animal{  
+       void eat(){System.out.println("eating...");}  
+     }  
+    class Dog extends Animal{  
+       void bark(){System.out.println("barking...");}  
+     }  
+    class TestInheritance{  
+       public static void main(String args[]){  
+         Dog d=new Dog();  
+         d.bark();  
+         d.eat();  
+      } 
+    }  
+    
+2.MULTILEVEL INHERITANCE:
+     * When there is a chain of inheritance, it is known as multilevel inheritance. 
+-> Example
+    class Animal{  
+        void eat(){System.out.println("eating...");}  
+     }  
+    class Dog extends Animal{  
+        void bark(){System.out.println("barking...");}  
+     }  
+    class BabyDog extends Dog{  
+        void weep(){System.out.println("weeping...");}  
+     }  
+    class TestInheritance2{  
+    public static void main(String args[]){  
+    BabyDog d=new BabyDog();  
+    d.weep();  
+    d.bark();  
+    d.eat();  
+    }
+    }  
