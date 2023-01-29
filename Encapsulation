@@ -1,0 +1,40 @@
+ENCAPSULATION:
+ -> Encapsulation in Java is a process of wrapping code and data together into a single unit
+ -> We can create a fully encapsulated class in Java by making all the data members of the class private
+ -> Public Method which is used to update(SET) private variable is known as "SETTER" or "MUTATOR".
+ -> Public Method which is used to Read(GET) private varaiable is known as "GETTER" or "ACCESSIOR".
+ -> Encapsulation can be refered as a data hiding.
+ 
+ ADVANTAGES:
+ 1. A class can have full control on data members
+ 2. A class can make its data members either read only or read/write by providing setter(or) getter.
+ 3. A class can change its internal implementation without effecting users program
+ 
+ Example:
+   class Student{
+     private int rollno;
+     private String name;
+     }
+     public void setRollno(int rollno){
+        this.rollno=rollno;
+      }  
+     public int getRollno(){
+        return rollno;
+      }
+     public void setName(String name){
+        this.name=name;
+      }
+     public String getName(){
+         return name;
+       }
+     }
+     public class Encapsulation{
+     public static void main(String[] args){
+     Student s1=new Student();
+     s1.setRollno(2);
+     s1.setName("Naveen");
+     System.out.println(sl.getRollno());
+     System.out.println(s1.getName());
+     }
+   }
+   
